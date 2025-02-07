@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 820.41">
+  <g id="kort">
+    <image width="986" height="749" transform="scale(1.1)" xlink:href="kort-1.png"/>
+  </g>
+  <g id="rute">
+    <polyline points="204.15 206.19 278.43 289.16 230.53 383.31 270.17 413.87 266.87 427.08 314.77 468.38 377.53 522.06 389.1 540 408.92 531.87 426.26 503.06 438.65 527.84 474.99 512.16 466.73 446.08 500.59 410.2 563.36 341.19 631.08 373.09 665.76 390.74 681.46 362.66 681.46 355.23" fill="none" stroke="#a30a0a" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <g id="punkter">
+    <g id="points">
+      <circle id="punkt4" cx="492.84" cy="512.16" r="19.71" fill="#b62300"/>
+      <circle id="punkt3" cx="692.54" cy="342.8" r="20.28" fill="#b62300"/>
+      <circle id="punkt2" cx="193.4" cy="189.98" r="19.45" fill="#b62300"/>
+      <circle id="punkt1" cx="266.48" cy="343.81" r="21.29" fill="#b62300"/>
+    </g>
+  </g>
+</svg>

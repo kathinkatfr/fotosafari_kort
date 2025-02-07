@@ -15,24 +15,12 @@ async function runProgram() {
   let objekter = await jsondata.json();
 
   //1. load svg
-  let mySvg = await fetch("map.svg");
+  let mySvg = await fetch("kort.svg");
   let svg = await mySvg.text();
 
   document.querySelector("#map").innerHTML = svg;
 
-  //2. find infobokse
-  /*  let info_1 = document.querySelector("#map #info-1");
-  let info_2 = document.querySelector("#map #info-2");
-  let info_3 = document.querySelector("#map #info-3");
-  let info_4 = document.querySelector("#map #info-4"); */
-
-  //skjul dem
-  /* info_1.style.visibility = "hidden";
-  info_2.style.visibility = "hidden";
-  info_3.style.visibility = "hidden";
-  info_4.style.visibility = "hidden"; */
-
-  //3. skift farve ved klik + vis tekst
+  //2. skift farve ved klik + vis tekst
   document.querySelector("#map #points").addEventListener("click", function (event) {
     clicked(event);
   });
@@ -40,6 +28,7 @@ async function runProgram() {
   //function clicked
   function clicked(object) {
     document.querySelector("#info").classList.remove("vis");
+    document.querySelector("#rute").classList.remove("animer-rute");
     document.querySelector("#info").style.visibility = "visible";
     objekter.forEach((objekt) => {
       if (infoboks != undefined) {
@@ -55,6 +44,7 @@ async function runProgram() {
       console.log(position);
       document.querySelector("#info").style.top = position.bottom + "px";
       document.querySelector("#info").style.left = position.right + "px";
+      document.querySelector("#rute").style.display = "block";
 
       //b. find det klikkede elements id
       selectedID = selected.getAttribute("id");
@@ -69,6 +59,8 @@ async function runProgram() {
         document.querySelector("#info h2").textContent = objekt.h2;
         document.querySelector("#info img").src = "/img/" + objekt.billede + ".webp";
 
+        document.querySelector("#rute").classList.add("animer-rute");
+
         document.querySelector("#info").addEventListener("click", function () {
           document.querySelector("#info").style.visibility = "hidden";
 
@@ -76,22 +68,6 @@ async function runProgram() {
           infoboks.style.visibility = "hidden";
         });
       }
-      /*  if (selectedID === "punkt1") {
-        info_1.style.visibility = "visible";
-        infoboks = info_1;
-      }
-      if (selectedID === "punkt2") {
-        info_2.style.visibility = "visible";
-        infoboks = info_2;
-      }
-      if (selectedID === "punkt3") {
-        info_3.style.visibility = "visible";
-        infoboks = info_3;
-      }
-      if (selectedID === "punkt4") {
-        info_4.style.visibility = "visible";
-        infoboks = info_4;
-      } */
     });
     //4. hvis der tidligere har været klikket skal det forrige element skifte farve til original
     if (active != undefined) {
