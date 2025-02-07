@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 836.25 554.19">
+  <image width="673" height="446" transform="scale(1.24)" xlink:href="map2-1.png" isolation="isolate"/>
+  <g id="points">
+    <circle id="punkt4" cx="565.83" cy="421.61" r="19.71" fill="#9b350b"/>
+    <circle id="punkt3" cx="729.59" cy="226.03" r="20.28" fill="#9b350b"/>
+    <circle id="punkt2" cx="177.94" cy="128.55" r="19.45" fill="#9b350b"/>
+    <circle id="punkt1" cx="335.59" cy="306.78" r="21.29" fill="#9b350b"/>
+  </g>
+</svg>

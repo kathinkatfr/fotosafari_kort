@@ -1,0 +1,26 @@
+[
+  {
+    "sted": "punkt1",
+    "h2": "Første udfordring",
+    "tekst": "Find en bygning eller struktur, der fanger din opmærksomhed, og tag et billede, der fremhæver den unikke træk. Fokuser på linjer, former og teksturer.",
+    "billede": "bygning"
+  },
+  {
+    "sted": "punkt2",
+    "h2": "Anden udfordring",
+    "tekst": "Find en lokation med stærke farver eller kontraster, og tag et billede, der fremhæver dette.",
+    "billede": "fritidshjem"
+  },
+  {
+    "sted": "punkt3",
+    "h2": "Tredje udfordring",
+    "tekst": "Tag et billede, der indfanger bevægelse.",
+    "billede": "gade"
+  },
+  {
+    "sted": "punkt4",
+    "h2": "Fjerde udfordring",
+    "tekst": "Tag et billede, hvor skygger spiller hovedrollen.",
+    "billede": "park"
+  }
+]
